@@ -1,0 +1,9 @@
+scrape_configs:
+- job_name: 'sample-metrics-app'
+  static_configs:
+  - targets: ['sample-metrics-app-service:8080']
+    labels:
+      env: 'production'
+  metrics_path: '/actuator/prometheus'
+  scrape_interval: 15s
+
