@@ -2,11 +2,11 @@
 
 ## Objective
 
-- Run a provided sre-hiring application.
+- Run a provided sre-web-app application
 - Implement a deployment system with Kubernetes (minikub, k3d ... ) and Helm.
 - You can improve, propose and implement everything you want.
 - Monitor the application.
-
+![GitHub Logo](https://github.com/Ourkish/sre-web-app/raw/main/images/image.jpg)
 ## Prerequisites
 - Linux workstation (I am using Ubuntu 20.04) with at least 15 Gb ram (r2-15 flavor on OVH) .
   `````
