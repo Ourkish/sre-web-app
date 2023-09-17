@@ -48,6 +48,7 @@
   ![jvm_dashboard](https://github.com/Ourkish/sre-web-app/assets/67292535/c888760b-1166-471e-925f-882cb5fda8b5)
 
   Deployment using terraform :
+  
   ![pods](https://github.com/Ourkish/sre-web-app/assets/67292535/fe3d8bcc-05ce-4c50-ad74-7d34f094002d)
 
   App metrics after deployment :
