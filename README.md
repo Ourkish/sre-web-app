@@ -69,6 +69,11 @@
   `````
   
 - Below are screenshots showcasing the results following the deployment and execution of the code.
+
+  Deploy using Helm and Terraform :
+
+  ![deploy](https://github.com/Ourkish/sre-web-app/assets/67292535/9b5cdf6d-1465-459c-8f42-d3e8b31b8ec5)
+
   
   Application Monitoring :
   
