@@ -67,7 +67,8 @@
   `````
   you will be asked to confirme, if you agree to destroy you should see an output like this :
   
-  ![kube_dashboard](https://github.com/Ourkish/sre-web-app/assets/67292535/6c6d36c3-85a9-463b-8ea1-df2642fce3be)
+  ![destroy_cluster](https://github.com/Ourkish/sre-web-app/assets/67292535/e70e4a92-c5eb-49a9-8593-08663cb072f5)
+
 
   
   
