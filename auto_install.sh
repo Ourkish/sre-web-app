@@ -19,6 +19,12 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+
+# Adding user to the docker group:
+sudo usermod -aG docker $USER
+newgrp docker
+
+
 # Install Minikube
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 chmod +x minikube
