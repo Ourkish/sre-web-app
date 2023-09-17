@@ -35,6 +35,7 @@
   namespaces, secrets, and ConfigMaps.
 
 ## In Practice
+
 - Quick Start :
   Clone the project on your environement and run those commands (if not already done !) :
   `````
@@ -42,6 +43,13 @@
   sudo chmod +x dep_install.sh
   sudo ./auto_install.sh
   sudo terraform apply
+  `````
+  
+- Allow EST/WEST traffic on exposed ports :
+  `````
+  kubectl port-forward --address 141.94.106.42 service/grafana 3000:80 > /dev/null 2>&1
+  kubectl port-forward --address 141.94.106.42 service/prometheus-server 9090:80 > /dev/null 2>&1 &
+  kubectl port-forward --address 141.94.106.42 service/sample-metrics-app-service 30080:8080 > /dev/null 2>&1 &
   `````
 - Below are screenshots showcasing the results following the deployment and execution of the code.
   
