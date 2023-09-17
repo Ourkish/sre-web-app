@@ -10,6 +10,22 @@ provider "helm" {
 }
 
 
+resource "kubernetes_persistent_volume_claim" "grafana_data" {
+  metadata {
+    name = "grafana-data"  # This name should match the one in your Helm release
+  }
+
+  spec {
+    access_modes = ["ReadWriteOnce"]
+    resources {
+      requests = {
+        storage = "10Gi"  # Adjust the size as needed
+      }
+    }
+  }
+}
+
+
 # Deploying Web app 
 resource "kubernetes_deployment" "sample_metrics_app" {
   metadata {
@@ -72,14 +88,22 @@ resource "kubernetes_service" "sample_metrics_app_service" {
 
 
 
-# Deploying Prometheus and Grafana via Helm
 resource "helm_release" "prometheus" {
   name       = "prometheus"
   repository = "https://prometheus-community.github.io/helm-charts"
   chart      = "prometheus"
+  
   set {
     name  = "server.additionalScrapeConfigs"
-    value = "additional-scrape-configs.yaml"
+    value = <<EOF
+- job_name: 'sample-metrics-app'
+  static_configs:
+  - targets: ['sample-metrics-app-service:8080']
+    labels:
+      app: sample-metrics-app
+  metrics_path: /actuator/prometheus
+  scheme: http
+EOF
   }
 }
 
@@ -90,6 +114,14 @@ resource "helm_release" "grafana" {
   set {
     name  = "adminPassword"
     value = "Grafana@OVH#"
+  }
+  set {
+    name  = "persistence.enabled"
+    value = "true"
+  }
+  set {
+    name  = "persistence.existingClaim"
+    value = "grafana-data"  # Use the name of your existing PVC or specify a new one
   }
 }
 
