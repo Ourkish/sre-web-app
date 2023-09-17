@@ -8,7 +8,7 @@
 - Monitor the application.
 
 ## Prerequisites
-- Linux workstation (I am using Ubuntu 20.04) with at least 15 Gb ram.
+- Linux workstation (I am using Ubuntu 20.04) with at least 15 Gb ram (r2-15 flavor on OVH) .
   `````
   cat /etc/*release*
   `````
@@ -17,7 +17,7 @@
   sudo mkdir /opt/sre-web-app
   sudo cd /opt/sre-web-app
   git clone https://github.com/Ourkish/sre-web-app.git
-  sudo chmod +x dep_install.sh
+  sudo chmod +x auto_install.sh
   sudo ./auto_install.sh
   `````
 - get the web app
