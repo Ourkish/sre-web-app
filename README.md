@@ -6,7 +6,8 @@
 - Implement a deployment system with Kubernetes (minikub, k3d ... ) and Helm.
 - You can improve, propose and implement everything you want.
 - Monitor the application.
-![GitHub Logo](https://github.com/Ourkish/sre-web-app/raw/main/images/image.jpg)
+
+![GitHub Logo](https://github.com/Ourkish/sre-web-app/tree/main/images/jvm_dashboard.png)
 ## Prerequisites
 - Linux workstation (I am using Ubuntu 20.04) with at least 15 Gb ram (r2-15 flavor on OVH) .
   `````
