@@ -23,15 +23,20 @@
   `````
 - get the web app
   in this lab we used a Java Web app (https://hub.docker.com/r/tkgregory/sample-metrics-application)
+
+- make sure you have your Horizon account ready and navigate to the 'Network' section. Then, go to 'Security Group' and create new rules to allow ports 3000, 9090, and 30080 for TCP, 
+  HTTP, Ingress. Set the authorization to 0.0.0.0/0 to allow checks from a browser on the public IP of the instance
   
 ## Understanding the operation
 
 - Minikube provides a local Kubernetes environment where you can deploy and manage containerized applications using Kubernetes resources.
 - Docker containers can be built and pushed to container registries. Kubernetes can then pull these containers and deploy them as pods (the smallest deployable units in Kubernetes).
 - kubectl is used to interact with the Minikube Kubernetes cluster. You can create pods, services, deployments, and other Kubernetes resources using kubectl commands.
-- Helm simplifies the installation of complex applications in Kubernetes. Helm charts describe how to deploy applications, including the necessary Kubernetes resources. You can use Helm to install and manage applications 
+- Helm simplifies the installation of complex applications in Kubernetes. Helm charts describe how to deploy applications, including the necessary Kubernetes resources. You can use 
+  Helm to install and manage applications 
   in your Minikube cluster.
-- Terraform can manage Kubernetes resources in Minikube as well as other infrastructure resources outside of Kubernetes. It uses Terraform providers to interact with the Kubernetes API and provision resources like 
+- Terraform can manage Kubernetes resources in Minikube as well as other infrastructure resources outside of Kubernetes. It uses Terraform providers to interact with the Kubernetes API 
+  and provision resources like 
   namespaces, secrets, and ConfigMaps.
 
 ## In Practice
