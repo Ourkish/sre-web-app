@@ -24,8 +24,8 @@
 - get the web app
   in this lab we used a Java Web app (https://hub.docker.com/r/tkgregory/sample-metrics-application)
 
-- make sure you have your Horizon account ready and navigate to the 'Network' section. Then, go to 'Security Group' and create new rules to allow ports 3000, 9090, and 30080 for TCP, 
-  HTTP, Ingress. Set the authorization to 0.0.0.0/0 to allow checks from a browser on the public IP of the instance
+- Ensure your Horizon account is prepared, then proceed to the 'Network' section. From there, access 'Security Group' and establish fresh rules that permit TCP, HTTP, and Ingress on 
+  ports 3000, 9090, and 30080. Set the authorization to '0.0.0.0/0' to enable browser-based checks on the instance's public IP.
   
 ## Understanding the operation
 
