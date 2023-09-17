@@ -23,7 +23,7 @@
 - get the web app
   in this lab we used a Java Web app (https://hub.docker.com/r/tkgregory/sample-metrics-application)
   
-## Understanding the Operation
+## Understanding the operation
 
 - Minikube provides a local Kubernetes environment where you can deploy and manage containerized applications using Kubernetes resources.
 - Docker containers can be built and pushed to container registries. Kubernetes can then pull these containers and deploy them as pods (the smallest deployable units in Kubernetes).
