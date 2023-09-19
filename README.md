@@ -47,9 +47,9 @@
   
 - Allow EST/WEST traffic on exposed ports :
   `````
-  kubectl port-forward --address 141.94.106.42 service/grafana 3000:80 > /dev/null 2>&1
-  kubectl port-forward --address 141.94.106.42 service/prometheus-server 9090:80 > /dev/null 2>&1 &
-  kubectl port-forward --address 141.94.106.42 service/sample-metrics-app-service 30080:8080 > /dev/null 2>&1 &
+  kubectl port-forward --address 57.128.112.35 service/grafana 3000:80
+  kubectl port-forward --address 57.128.112.35 service/prometheus-server 9090:80
+  kubectl port-forward --address 57.128.112.35 svc/sre-hiring-service 8080:8080
   `````
 
 - Add a cron to check disk and to be notified by email if disk run's out of space :
