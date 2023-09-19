@@ -78,23 +78,19 @@
 
   ![app_metrics](https://github.com/Ourkish/sre-web-app/assets/67292535/ba6dde2c-e924-48a6-806b-4a532617b31b)
 
-  
   Application Monitoring :
   
   ![go_metrics](https://github.com/Ourkish/sre-web-app/assets/67292535/0ccf2924-62ec-4f6f-be02-bb7065244781)
 
   ![go_process](https://github.com/Ourkish/sre-web-app/assets/67292535/abeb9b48-7b5f-4813-b773-f76ae5ca802a)
 
-
-  Deployment using terraform :
+  show pods after deployment :
   
-  ![pods](https://github.com/Ourkish/sre-web-app/assets/67292535/fe3d8bcc-05ce-4c50-ad74-7d34f094002d)
-
+  ![get_pods](https://github.com/Ourkish/sre-web-app/assets/67292535/88317871-704f-423e-aad2-044a46898682)
 
   Kubernetes Dashboard :
   
   ![kub_metrics](https://github.com/Ourkish/sre-web-app/assets/67292535/d1a7a269-31da-43b4-816f-187bec36391b)
-
 
   To destroy the cluster use this command :
   `````
